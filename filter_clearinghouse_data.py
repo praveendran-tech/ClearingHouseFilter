@@ -4,10 +4,10 @@ Filter Clearinghouse student data (from CSV file) based on multiple
 conditions and export only qualifying records to a new CSV.
 
 INPUT:
-    File:  ClearingHouse_2025.csv
+    File:  xxxx.csv
 
 OUTPUT:
-    clearinghouse_filtered_output.csv
+    xxxxx.csv
 
 Current rules:
 
@@ -39,7 +39,7 @@ DEBUG = True   # set to False if you want less console output
 
 
 def main():
-    input_file = "ClearingHouse_2025.csv"
+    input_file = "xxxx.csv"
     print(f"Reading CSV: {input_file}")
     df = pd.read_csv(input_file, dtype=str)
 
@@ -91,7 +91,7 @@ def main():
         COL_GRADUATED,
     ]
 
-    df_final[output_cols].to_csv("clearinghouse_filtered_output.csv", index=False)
+    df_final[output_cols].to_csv("xx.csv", index=False)
     print("✔ Output written → clearinghouse_filtered_output.csv")
 
 
